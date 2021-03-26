@@ -3,7 +3,6 @@ package com.xana.mikochat.common;
 public interface Common {
     /**
      * 配置信息，常量
-     * f
      */
     interface Constance{
         String REGEX_MOBILE = "^1[34578][0-9]{9}$";
