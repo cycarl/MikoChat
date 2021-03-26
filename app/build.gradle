@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        applicationId "com.xana.mikochat.app"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        //个推相关参数
+        manifestPlaceholders = [
+                GETUI_APP_ID    : "Wo7IeGHLHj7B6XGWR5htQA",
+                GETUI_APP_KEY   : "ATDSNbUoLn9WQHZXQS3xw8",
+                GETUI_APP_SECRET: "O6kvBdvaS09EH5yIM37yY6",
+                PACKAGE_NAME    : applicationId
+        ]
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    implementation project(path: ':common')
+    implementation project(path: ':factory')
+
+    implementation "com.android.support:appcompat-v7:$rootProject.ext.supportVersion"
+    api "com.android.support:recyclerview-v7:$rootProject.ext.supportVersion"
+    implementation "com.android.support:design:$rootProject.ext.supportVersion"
+
+    implementation "net.qiujuer.genius:ui:$rootProject.ext.geniusVersion"
+    implementation "net.qiujuer.genius:res:$rootProject.ext.geniusVersion"
+
+    implementation "de.hdodenhof:circleimageview:$rootProject.ext.circleimageviewVersion"
+    implementation "com.github.bumptech.glide:glide:$rootProject.ext.glideVersion"
+
+    implementation "com.jakewharton:butterknife:$rootProject.ext.butterknifeVersion"
+    implementation 'com.android.support:support-v4:28.0.0'
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.ext.butterknifeVersion"
+
+    implementation "com.yalantis:ucrop:$rootProject.ext.ucropVersion"
+    implementation "pub.devrel:easypermissions:$rootProject.ext.easyPMVersion"
+
+    implementation "com.getui:sdk:$rootProject.ext.getuiVersion"
+    implementation 'com.lguipeng.bubbleview:library:1.0.0'
+
+    implementation "net.qiujuer.widget:airpanel:$rootProject.ext.airpanelVersion"
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+
+}

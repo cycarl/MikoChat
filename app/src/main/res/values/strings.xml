@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">MikoChat</string>
+    <string name="title_copyright">MikoChat © 2020–2021 by xana</string>
+    <string name="title_activity_launch">@string/app_name</string>
+    <string name="title_activity_user">UserActivity</string>
+    <string name="title_activity_message">MessageActivity</string>
+    <string name="title_activity_personal">PersonalActivity</string>
+    <string name="title_activity_group_create">GroupCreateActivity</string>
+    <string name="title_activity_group_member">GroupMemberActivity</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="hello_world">你好，世界！</string>
+
+    <string name="thinks">私はさーその言葉を受けた時にはさ、もうきちんと救われて行ったんだよ！ありがとう</string>
+</resources>

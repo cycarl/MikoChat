@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/actionBarWithStatusBarSize"
+        android:elevation="@dimen/len_2"
+        android:outlineProvider="bounds">
+        <FrameLayout
+            android:layout_marginTop="@dimen/statusBarSize"
+            android:paddingLeft="@dimen/len_4"
+            android:paddingRight="@dimen/len_4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.xana.mikochat.common.widget.PortraitView
+                android:layout_width="@dimen/len_40"
+                android:layout_height="@dimen/len_40"
+                android:layout_margin="@dimen/len_4"
+                android:padding="@dimen/len_4"
+                android:foreground="@drawable/ic_touch_menu"
+                android:src="@drawable/default_portrait"
+                android:clickable="true"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/app_name"
+                android:textColor="@color/white"/>
+            <ImageView
+                android:layout_width="@dimen/len_40"
+                android:layout_height="@dimen/len_40"
+                android:src="@drawable/ic_search"
+                android:layout_margin="@dimen/len_4"
+                android:padding="@dimen/len_10"
+                android:layout_gravity="end|center_horizontal"
+                android:contentDescription="@string/app_name"
+                android:foreground="@drawable/ic_touch_menu"
+                android:clickable="true"
+                android:tint="@color/white"/>
+
+        </FrameLayout>
+    </android.support.design.widget.AppBarLayout>
+    <FrameLayout
+        android:id="@+id/lay_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginBottom="@dimen/len_52"/>
+    
+    <net.qiujuer.genius.ui.widget.FloatActionButton
+        android:layout_width="@dimen/len_52"
+        android:layout_height="@dimen/len_52"
+        app:layout_anchor="@id/lay_content"
+        app:layout_anchorGravity="end|bottom"
+        android:layout_marginBottom="@dimen/len_68"
+        android:layout_marginEnd="@dimen/len_16"
+        android:tint="@color/white"
+        android:src="@drawable/ic_group_add"
+        android:padding="@dimen/len_20"
+        app:gBackgroundColor="@color/colorAccent"/>
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/len_52"
+        android:layout_gravity="bottom"
+        android:background="@color/grey_200"/>
+
+</android.support.design.widget.CoordinatorLayout>

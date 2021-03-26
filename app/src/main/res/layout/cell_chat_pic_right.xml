@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/len_6"
+    android:paddingTop="@dimen/len_4"
+    android:paddingEnd="@dimen/len_6"
+    android:paddingBottom="@dimen/len_4">
+    <!--发送消息-->
+
+    <com.xana.mikochat.common.widget.PortraitView
+        android:id="@+id/im_portrait"
+        android:layout_width="@dimen/portraitSize"
+        android:layout_height="@dimen/portraitSize"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/default_portrait"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dp" />
+
+    <net.qiujuer.genius.ui.widget.Loading
+        android:id="@+id/loading"
+        android:layout_width="@dimen/len_16"
+        android:layout_height="@dimen/len_16"
+        android:layout_alignBottom="@id/im_image"
+        android:layout_marginEnd="@dimen/len_4"
+        android:layout_toStartOf="@id/im_image"
+        android:background="@null"
+        android:padding="@dimen/len_2"
+        app:gAutoRun="false"
+        app:gForegroundColor="@color/colorAccent"
+        app:gForegroundLineSize="1dp" />
+
+    <com.xana.mikochat.common.widget.AngleImageView
+        android:id="@+id/im_image"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/im_portrait"
+        android:layout_marginTop="@dimen/len_20"
+        android:src="@drawable/img_default"
+        android:foreground="@drawable/ic_touch_fg"
+        android:layout_marginEnd="@dimen/len_6"/>
+</RelativeLayout>

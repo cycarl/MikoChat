@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.xana.mikochat.common.widget.PortraitView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:foreground="@drawable/ic_touch_fg_btn"
+
+    android:id="@+id/im_portrait"
+    android:layout_width="@dimen/portraitMinSize"
+    android:layout_height="@dimen/portraitMinSize"
+    android:padding="@dimen/len_2"
+    android:layout_marginEnd="@dimen/len_4"
+    android:src="@drawable/default_portrait"
+    app:civ_border_color="@color/white"
+    app:civ_border_width="1dp" />
