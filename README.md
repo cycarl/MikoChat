@@ -6,7 +6,7 @@
 #### 软件架构
 采用MVP模式开发
 
-#### 截图演示
+#### app截图
 
 ![avatar](https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/mikochat/0.jpg)
 ![avatar](https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/mikochat/1.jpg)
