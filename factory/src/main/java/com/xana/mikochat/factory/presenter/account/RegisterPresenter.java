@@ -46,7 +46,6 @@ public class RegisterPresenter
         return !TextUtils.isEmpty(phone)&& Pattern.matches(Common.Constance.REGEX_MOBILE, phone);
     }
 
-
     @Override
     public void onDataLoaded(User user) {
         /**

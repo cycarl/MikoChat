@@ -4,19 +4,23 @@
 一个即时通讯app, 用户可以发送文字、emoji和图片，语音消息，后续将会添加语音和视频聊天功能.。
 
 #### 软件架构
-软件架构说明
+采用MVP模式开发
 
-#### 安装教程
+#### 截图演示
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
-
-#### 使用说明
-
-1.  xxxx
-2.  xxxx
-3.  xxxx
+![avatar](https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/mikochat/0.jpg)
+![avatar](https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/mikochat/1.jpg)
+![avatar](https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/mikochat/2.jpg)
+![avatar](https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/mikochat/3.jpg)
+![avatar](https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/mikochat/4.jpg)
+![avatar](https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/mikochat/5.jpg)
+![avatar](https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/mikochat/6.jpg)
+![avatar](https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/mikochat/7.jpg)
+![avatar](https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/mikochat/8.jpg)
+![avatar](https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/mikochat/9.jpg)
+![avatar](https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/mikochat/10.jpg)
+![avatar](https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/mikochat/11.jpg)
+![avatar](https://mikochat.oss-ap-northeast-1.aliyuncs.com/Screenshoots/mikochat/12.jpg)
 
 #### 参与贡献
 
@@ -24,7 +28,6 @@
 2.  新建 Feat_xxx 分支
 3.  提交代码
 4.  新建 Pull Request
-
 
 #### 特技
 
